@@ -37,32 +37,66 @@
 
 </head>
 <body>
-    <header class="lg:flex">
+    <header class=" mx-auto ">
         <!--Nav Section-->
-     
-              <div class="flex items-center gap-3">
-              <img src="c1-assets/logo-header.png" alt="">
-              <h4 class="hidden lg:inline">Browse4Pets</h4>
-            </div>
-            <div class=" hidden lg:flex">
-              <ul class="menu menu-horizontal px-1">
-                <li><a>Item 1</a></li>
-                <li><a>Item 3</a></li>
-              </ul>
-            </div>
-            <div class="hidden lg:inline ">
-                 <a class="btn">Button</a>
-            </div>
-        <!--Dropdown-->
-          <ul class="menu dropdown-content bg-base-200 w-56 lg:hidden">
-            <li><a>Item 1</a></li>
-            <li><a>Item 2</a></li>
-            <li><a>Item 3</a></li>
-          </ul>
+      
         
 
+     
+              <div class=" justify-between items-center mx-20 mt-4 lg:flex">
+                <div class="flex items-center gap-3">
+                  
+                  <div class="flex flex-row items-center justify-between gap-10">
+                    <img src="c1-assets/logo-header.png" alt="" class="mr-12  justify-start">
+                  <div tabindex="0" role="button" class="btn btn-ghost flex  lg:hidden">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-5 w-5"
+                      fill="none"
+                      viewBox=" 0 0 24 24"
+                      stroke="currentColor">
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M4 6h16M4 12h8m-8 6h16" />
+                    </svg>
+                    <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content bg-base-100 hidden rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                  <li><a>Item 1</a></li>
+                  <li>
+                    <a>Parent</a>
+                    <ul class="p-2 ">
+                      <li><a>Submenu 1</a></li>
+                      <li><a>Submenu 2</a></li>
+                    </ul>
+                  </li>
+                  </div>
+                </div>
+                
+                  <h4 class="hidden lg:inline text-2xl">Browse <span class="text-[#FFDC26]">4</span> Pets</h4>
+                </div>
+                <div class=" hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1">
+                    <li><a>FInd a Pet</a></li>
+                    <li><a>Breeds</a></li>
+                    <li><a>Contact Us </a></li>
+                  </ul>
+                </div>
+                <div class="hidden lg:inline ">
+                     <a class="btn">Log in</a>
+                     <a class="btn">Register</a>
+                </div>
+              </div>
+       
+
+              
+             
+        <!--Dropdown-->
+
     </header>
-    <main class=" mx-auto">
+    <main class=" ml-4 mx-auto">
         <div class="hero bg-white flex flex-col  lg:hidden ">
            <div class="  ">
                 <h1 class="text-5xl  font-normal adlam">Pamper Your Pet, <br> Because They Deserve <br> the Best</h1>
@@ -101,9 +135,9 @@
 
  <section>
     <h4 class="text-start justify-start ml-8 lg:ml-20 text-3xl mt-14 font-bold adlam">Browse by categories</h4>
-    <div class="grid grid-cols-2 px-4 gap-4 items-center justify-center  mt-8 lg:mt-14 lg:mx-auto lg:flex lg:gap-6">
+    <div class="grid grid-cols-2 px-2 ml-3 gap-20 items-center justify-center  mt-8 lg:mt-14 lg:mx-auto lg:flex lg:gap-6">
        
-        <div class="card bg-[#F9DF8A] w-44 h-56 lg:w-64 lg:h-56 rounded-2xl mx:auto pt-9 items-center justify-center shadow-xl">
+        <div class="card bg-[#F9DF8A]  w-52 h-64 rounded-2xl mx:auto pt-9 items-center justify-center shadow-xl">
             <figure class=" bg-white h-24 w-24  rounded-full">
               <img
                 src="c1-assets/dog-cartoon.png"
@@ -115,7 +149,7 @@
               </div>
             </div>
 
-            <div class="card bg-[#F9DF8A] w-44 h-56 lg:w-52 lg:h-64 rounded-2xl mx:auto pt-9 items-center justify-center shadow-xl">                
+            <div class="card bg-[#F9DF8A]  w-52 h-64 rounded-2xl mx:auto pt-9 items-center justify-center shadow-xl">                
                 <figure class=" bg-white h-24 w-24  rounded-full">
                 <img
                     src="c1-assets/fish-cartoon.png"
@@ -127,7 +161,7 @@
                   </div>
                 </div>
 
-                <div class="card bg-[#F9DF8A] w-44 h-56 lg:w-52 lg:h-64 rounded-2xl mx:auto pt-9 items-center justify-center shadow-xl">                   
+                <div class="card bg-[#F9DF8A] w-52 h-64 rounded-2xl mx:auto pt-9 items-center justify-center shadow-xl">                   
                      <figure class=" bg-white h-24 w-24  rounded-full">
                       <img
                         src="c1-assets/cat-cartoon.png"
@@ -139,7 +173,7 @@
                       </div>
                     </div>
 
-                    <div class="card bg-[#F9DF8A] w-44 h-56 lg:w-52 lg:h-64 rounded-2xl mx:auto pt-9 items-center justify-center shadow-xl">                       
+                    <div class="card bg-[#F9DF8A]  w-52 h-64 rounded-2xl mx:auto pt-9 items-center justify-center shadow-xl">                       
                          <figure class=" bg-white h-24 w-24  rounded-full">
                           <img
                             src="c1-assets/bird-cartoon.png"
@@ -151,7 +185,7 @@
                           </div>
                         </div>
 
-                        <div class="card bg-[#F9DF8A] w-44 h-56 lg:w-52 lg:h-64 rounded-2xl mx:auto pt-9 items-center justify-center shadow-xl">                           
+                        <div class="card bg-[#F9DF8A]  w-52 h-64 rounded-2xl mx:auto pt-9 items-center justify-center shadow-xl">                           
                              <figure class=" bg-white h-24 w-24  rounded-full">
                               <img
                                 src="c1-assets/mouse-cartoon.png"
@@ -163,7 +197,7 @@
                               </div>
                             </div>
 
-                            <div class="card bg-[#F9DF8A] w-44 h-56 lg:w-52 lg:h-64 rounded-2xl mx:auto pt-9 items-center justify-center shadow-xl">                               
+                            <div class="card bg-[#F9DF8A]  w-52 h-64 rounded-2xl mx:auto pt-9 items-center justify-center shadow-xl">                               
                                  <figure class=" bg-white h-24 w-24  rounded-full">
                                   <img
                                     src="c1-assets/rabbit-cartoon.png"
@@ -287,27 +321,13 @@
                                         <h5 class="text-xs lg:text-xl ">$39.99</h5>
                                     </div>
                                 </card>
-
-                  
-                          
-
-           
-                
-  
-
-               
-
-               
-                
-                      
-                   
-            </div>
+                               </div>
               
-            
+                              </section> 
         
 
          
-        </section> 
+        
 
 </main>
   
